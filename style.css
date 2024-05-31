@@ -1,7 +1,14 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
     font-family: 'Poboto', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     color: black;
 }
 
@@ -17,14 +24,18 @@ ul {
 }
 
 .container {
-    max-width: 941px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    width: 100%;
+    height: auto;
 }
 
 .header {
     padding: 25px 0;
+    background-color: #fff;
+    width: 100%;
 }
 
 .header .container {
@@ -33,10 +44,6 @@ ul {
     gap: 35px;
     align-items: center;
     margin: 0 auto;
-}
-
-.header__logo {
-
 }
 
 .header__nav {
@@ -48,12 +55,11 @@ ul {
 .header__list {
     display: flex;
     align-items: center;
-    gap: 40px;
-
+    gap: 50px;
 }
 
 .header__nav a {
-    font-size: 14px;
+    font-size: 18px;
     color: #150C01;
     opacity: 0.8;
 }
@@ -64,93 +70,199 @@ ul {
 }
 
 .header__nav a.active {
-    font-size: 14px;
+    font-size: 18px;
     color: #dc8720;
     opacity: 0.8;
 }
 
 .btn-container {
-    display: flex;
-    gap: 30px; 
+    position: absolute;
+    display: flex; 
+    gap: 30px;
+    top: 532px;
 }
 
-.btn, .btn2 {
+.btn, .btn1, .btn2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
     border-radius: 5px;
     width: 165px;
     height: 50px;
     transition: opacity 0.3s;
-    text-decoration: none;
-    margin-top: 50px;
 }
 
 .btn {
-    color: rgb(255, 254, 254);
+    color: #fff;
     background: #dc8720;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.btn1 {
+    color: #fff;
+    background: #dc8720;
+    font-weight: 500;
+    margin-top: 1px;
+    transition: opacity 0.3s;
 }
 
 .btn2 {
+    font-weight: 500;
+    text-decoration: none;
     color: #dc8720;
     border: 1px solid #ffd6a3;
-}   
+}
 
 .btn:hover {
     opacity: 0.8;
 }
 
-.main {
-
-}
-
-.welcome {
-
-}
-
 .main__image {
-    position: absolute;
-    top: 100px; 
-    right: 250px; 
+    top: 20px;
+    margin-left: 600px;
     background-size: cover;
     z-index: -2;
-    width: 670px; 
-    height: auto; 
-}
-
-.container {
-
+    width: 840px;
+    height: auto;
 }
 
 .welcome__title {
-    width: 555px;
+    position: absolute;
+    width: 650px;
     height: 161px;
     left: 150px;
     top: 236px;
 
     font-family: 'Philosopher';
     font-style: normal;
-    font-weight: 700;
-    font-size: 48.83px;
+    font-size: 57px;
     line-height: 58px;
-
     color: #150C01;
 }
 
 .welcome__desc {
+    position: absolute;
     width: 555px;
     height: 43px;
     left: 150px;
     top: 439px;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
-
     color: #150C01;
 
     opacity: 0.7;
 
+}
 
+.features {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 100px;
+    color: #DC780B;
+    opacity: 0.7;
+}
+
+.main__title {
+    width: 352px;
+    height: 35px;
+    left: 544px;
+    top: 841px;
+
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 35px;
+    text-transform: capitalize;
+
+    color: #150C01;
+} 
+
+.food__position {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.food__position .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 941px;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.food__list {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.font__image {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.freatures__list_title {
+    margin: 10px auto;
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    color: #150C01;
+    margin-bottom: 10px;
+}
+
+.features__list_desc {
+    margin: 20px auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #150C01;
+    opacity: 0.7;
+    max-width: 700px;
+}
+ 
+.image-container {
+    position: relative;
+    width: 100px;  
+    height: 100px;  
+    background-image: url('./assets/images/Group 24.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.front-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;  /* Adjust size as needed */
+    height: auto;
 }
