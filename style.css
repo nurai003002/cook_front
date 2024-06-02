@@ -82,7 +82,7 @@ ul {
     top: 532px;
 }
 
-.btn, .btn1, .btn2 {
+.btn, .btn1, .btn2, .btn3, .btn4{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,15 +247,14 @@ ul {
     opacity: 0.7;
     max-width: 700px;
 }
- 
+
 .image-container {
     position: relative;
     width: 100px;  
     height: 100px;  
     background-image: url('./assets/images/Group 24.png'); 
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    left: 30%;
 }
 
 .front-image {
@@ -263,6 +262,280 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;  /* Adjust size as needed */
+    width: 60px;  
     height: auto;
+}
+
+.about__image {
+    position: absolute;
+    width: 555px;
+    height: 500px;
+    left: 150px;
+    top: 1271.73px;
+    border-radius: 35px;
+}
+
+.about__title {
+    position: absolute;
+    left: 802px;
+    top: 1364.73px;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #DC780B;
+    opacity: 0.7;
+
+}
+
+.about__main_title {
+    position: absolute;
+    width: 487px;
+    height: 112px;
+    left: 803px;
+    top: 1390.73px;
+
+    font-family: 'Philosopher';
+    font-size: 33px;
+    line-height: 44px;
+
+    color: #150C01;
+
+}
+
+.about__desc {
+    position: absolute;
+    width: 487px;
+    height: 76px;
+    left: 803px;
+    top: 1550px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #150C01;
+
+    opacity: 0.7;
+
+}
+
+.btn3 {
+    position: absolute;
+    color: #fff;
+    background: #dc8720;
+    font-weight: 500;
+    margin-top: 1px;
+    transition: opacity 0.3s;
+    width: 142px;
+    height: 42px;
+    left: 803px;
+    top: 1670px;
+}
+
+.about__area {
+    position: absolute;
+    width: 1140px;
+    height: 500px;
+    left: 150px;
+    top: 123px;
+}
+
+.menu__main {
+    position: absolute;
+    width: 990px;
+    height: 146px;
+    left: 347px;
+    top: 2000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__title {
+    width: 55px;
+    height: 24px;
+    left: 693px;
+    top: 1887px;
+
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #DC780B;
+
+    opacity: 0.7;
+}
+
+.menu__main_title {
+    width: 325px;
+    height: 24px;
+    left: 557px;
+    top: 1920px;
+
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 24px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+
+    color: #150C01;
+}
+
+.menu__desc {
+    width: 748px;
+    height: 64px;
+    left: 347px;
+    top: 1969px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #150C01;
+
+    opacity: 0.7;
+}
+
+.menu__products .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+
+
+.product-list {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 425px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 900px;
+}
+
+.product-list2 {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 425px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.title_product {
+    font-size: 24px;
+    color: #333;
+    margin: 21;
+    margin-left: 25px;
+    font-family: 'Philosopher';
+    font-style: normal;
+}
+
+.price {
+    font-size: 22px;
+    margin: 21;
+    color: #333;
+    margin-right: 25px;
+    font-family: 'Philosopher';
+    font-style: normal;
+}
+
+
+.product-description {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+    width: 300px; 
+    white-space: normal; 
+    word-break: normal; 
+    margin-left: 19px
+}
+
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e67e22;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    text-decoration: none;
+    bottom: 20px;
+    margin-left: 25px;
+    font-size: 24px;
+    transition: background 0.3s ease;
+
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+
+.add-to-cart:hover {
+    background: #d35400;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+    margin-top: 20;
+}
+
+.star {
+    font-size: 20px;
+    color: #f39c12;
+    margin: 0 2px;
+}
+
+.btn4 {
+    font-weight: 500;
+    text-decoration: none;
+    color: #dc8720;
+    border: 1px solid #ffd6a3;
+    margin: 50px;
+    margin-left: 45%;
+} 
+
+.background_image {
+    /* width: 1440px; */
+    height: 518px;
+    left: 1000px;
+
+    background: #FBF1E7;
+    /* background-size: cover; */
+    /* opacity: 0.4; */
 }
