@@ -530,12 +530,131 @@ ul {
     margin-left: 45%;
 } 
 
-.background_image {
-    /* width: 1440px; */
+.social_media {
     height: 518px;
-    left: 1000px;
-
+    margin-top: 187px;
     background: #FBF1E7;
-    /* background-size: cover; */
-    /* opacity: 0.4; */
+}
+
+.order__product {
+    position: absolute;
+    width: 555px;
+    height: 275px;
+    left: 247px;
+    top: 3480px;
+}
+
+.main_title{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+    margin-top: 114px;
+    
+}
+
+.social_main_title {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #150C01;
+    margin-top: 5px;
+}
+
+.social_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #150C01;
+    opacity: 0.7;
+    margin-top: 29px;
+
+}
+
+.phone {
+    width: 323.14px;
+    text-align: center;
+    height: 651px;
+    margin: 0 auto; 
+    display: block;
+}
+
+.parent-container {
+    width: 350%; 
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.parent-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.phone {
+    width: 323.14px;
+    height: 651px;
+    display: block;
+    margin: 0 auto;
+    margin-left: 150%;
+}
+
+.order__phone {
+    position: absolute;
+    width: 570px;
+    height: 275px;
+    left: 240px;
+    top: 3360px;
+}
+
+.app_buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.app_buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    color: white;
+}
+
+.app_buttons a:hover {
+    background-color: #e0e0e0;
+}
+
+.socia_apple {
+    width: 24px;
+    height: 24px;
+}
+
+.socia_apple {
+    background: url('./assets/images/apple 1.png') no-repeat center center;
+    background-size: contain;
+    color: white;
+}
+
+.socia_playmarket a{
+    /* font-weight: 500; */
+    /* text-decoration: none; */
+    color: #eedcc5;
+    border: 1px solid #fffefc;
+    /* margin: 50px; */
+    /* margin-left: 45%; */
 }
